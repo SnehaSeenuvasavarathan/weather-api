@@ -9,7 +9,7 @@ app.get("/", function (req,res) {
 })
 app.post("/", function(req,res){
   city=req.body.city;
-  url="https://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=c550ad18ebe744a4669026ac832ea7e0&units=metric"
+  url="https://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=&units=metric"
   console.log(city)
   https.get(url, function (response) {
   console.log(response);
