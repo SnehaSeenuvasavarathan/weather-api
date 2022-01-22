@@ -13,6 +13,7 @@ app.post("/", function(req,res){
   city=req.body.city;
   api_key= process.env.API_KEY
   url="https://api.openweathermap.org/data/2.5/weather?q="+city+"&appid="+api_key+"&units=metric"
+  console.log(url)
   console.log(city)
   https.get(url, function (response) {
   console.log(response);
